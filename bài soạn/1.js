@@ -9,24 +9,32 @@ function kiemTraDiem() {
 }
 
 function kiemTraNgayTrongTuan() {
-    let soNgay = parseInt(prompt("Nhập một số:"));
+    let soNgay = parseInt(prompt("Nhập số ngày:"));
 
-    if (soNgay == 1) {
-       alert('chủ nhật')
-    } else if (soNgay == 2) {
-        alert('thứ 2')
-    } else if (soNgay == 3) {
-        alert('thứ 3')
-    } else if (soNgay == 4) {
-        alert('thứ 4')
-    } else if (soNgay == 5) {
-        alert('thứ 5')
-    } else if (soNgay == 6) {
-        alert('thứ 6')
-    } else if (soNgay == 7) {
-        alert('thứ 7')
-    } else {
-        alert('đây còn ko phải ngày trong tuần')
+    switch (soNgay) {
+        case 1:
+            alert('chủ nhật');
+            break;
+        case 2:
+            alert('thứ 2');
+            break;
+        case 3:
+            alert('thứ 3');
+            break;
+        case 4:
+            alert('thư 4');
+            break;
+        case 5:
+            alert('thú 5');
+            break;
+        case 6:
+            alert('thứ 6');
+            break;
+        case 7:
+            alert('thứ 7');
+            break;
+        default:
+            alert('đây còn ko phải ngày trong tuần')
     }
 }
 
