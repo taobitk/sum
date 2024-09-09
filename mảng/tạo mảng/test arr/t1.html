@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="noname">
+<button type="button" onclick="sds()">button</button>
+<p id="res"></p>
+<script>
+    function sds() {
+        let a = " ";
+        let n = [ 'c', 's', 'c', '2', '6', '1' ]
+        for (let i=n.length;i>=0;i--){
+          a += n[i];
+        }
+        document.getElementById('res').innerHTML = a;
+
+    }
+
+</script>
+</body>
+</html>

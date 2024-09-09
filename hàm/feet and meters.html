@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id ="number" placeholder="number">
+<button type="button" onclick="ftom()" > feet to meters</button>
+<button type="button" onclick="mtof()" > meters to feet</button>
+<script>
+   function ftom(f){
+       f = document.getElementById('number').value;
+       let ftm = 0.305 * f;
+       document.getElementById('number').value = ftm;
+       return ftm;
+   }
+   function mtof(m){
+       m = document.getElementById('number').value;
+       let mtf =  3.279 * m;
+       document.getElementById('number').value = mtf;
+       return mtf;
+   }
+</script>
+</body>
+</html>

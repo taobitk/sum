@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nub" placeholder=" nhập độ c">
+<button onclick="tinh()"> tính </button>
+<p id="no"></p>
+<script>
+    class Temperature{
+        temp_C;
+        constructor(temp_C) { this.temp_C = temp_C }
+        CtoF(){
+            return 9/5 * this.temp_C + 32;
+        };
+        CtoK(){
+            return 273.15 + this.temp_C ;
+        };
+    }
+    function tinh(){
+        let temp1 = new Temperature(parseInt( document.getElementById('nub').value));
+        document.getElementById('no').innerHTML = 'C to K '+ temp1.CtoK() + '<br>' + 'C to F '+ temp1.CtoF();
+    }
+
+</script>
+</body>
+</html>

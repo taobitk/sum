@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aaa</title>
+</head>
+<body>
+<input type="number" id="thatao">
+<button type="button" onclick="a()">thataodima</button>
+<p id="res"></p>
+<script>
+    function a(){
+        let arr = [3,5,4,56,7657,7567,43,435,54];
+        let x = parseInt(document.getElementById('thatao').value);
+
+        for (let i = 0; i < arr.length; i++){
+            if (x === arr[i]) {
+                document.getElementById('res').innerHTML = 'nuber in arr is: '+ i;
+                return;
+            }
+        }
+        document.getElementById('res').innerHTML = 'Number not found in arr';
+
+    }
+
+
+</script>
+</body>
+</html>
