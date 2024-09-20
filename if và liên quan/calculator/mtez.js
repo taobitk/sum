@@ -1,6 +1,8 @@
-function disp(){
-    let dis = document.getElementById("disp");
-    let test = document.getElementById("test");
-    dis.value =
-    test.innerHTML = disp.value;
+ let dis= '';
+function dispp(){
+   document.getElementById('dis').value =dis;
+   console.log(dis);
+}
+function nub1(){
+    dis += '1';
 }

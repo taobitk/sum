@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="book_class.js"></script>
+    <style>
+        table{
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        tr{
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        td{
+            height: 40px;
+            width: 100px;
+            font-size: 15px;
+            font-family: "Segoe UI";
+            text-align: center;
+        }
+        button{
+           border-radius: 5px;
+            width: 90px;height: 35px;
+            background-color: blue;
+            color: white;
+
+        }
+        input{
+            border-radius: 5px; width: 140px;height: 30px
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh; /* Chiều cao bằng chiều cao màn hình */
+        }
+    </style>
+</head>
+<body>
+<div style="margin: 0 auto">
+    <table style="border: none;margin: 0 auto; width: 900px;height: 120px; background-color: mediumslateblue; border-radius: 8px;">
+        <tr style="border: none">
+            <td><input  id="bookName" type="text" placeholder="bookName"></td>
+            <td><input  id="id" type="text" placeholder="id"></td>
+            <td> <input id="price" type="number" placeholder="price"></td>
+            <td> <input id="inventory" type="number" placeholder="inventory"></td>
+            <td> <input id="publisher" type="text" placeholder="publisher"></td>
+            <td> <input id="describe" type="text" placeholder="describe"></td>
+            <td><button type="submit" onclick="addBook()" >submit</button></td>
+        </tr>
+        <tr>
+            <td><input  id="findById" type="text" placeholder="find By Id"></td>
+            <td><input  id="findByName" type="text" placeholder="find By Name"></td>
+            <td><button type="button" onclick="find()" >Find</button></td>
+
+        </tr>
+    </table>
+
+    <div class="container">
+        <button onclick="display()">display</button>
+    </div>
+</div>
+<div style="background-color: yellow">
+    <hr>
+    <hr>
+</div>
+
+<p id="view"></p>
+</body>
+</html>

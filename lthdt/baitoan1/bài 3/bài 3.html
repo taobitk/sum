@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tonguoc(nubct){
+        let sum = 0;
+        for (let i = 0; i < nubct; i++) {
+            if (nubct % i === 0){
+                sum += i;
+            }
+        }
+        return sum;
+    }
+    function thanthiet(a,b){
+        if (tonguoc(a) === b && tonguoc(b) === a){
+            document.write('đây là số thân thiết')
+        }else {
+            document.write('đây là 2 số ghét nhau')
+        }
+    }
+    let a= 17296;
+    let b= 18416;
+    thanthiet(a,b);
+</script>
+</body>
+</html>

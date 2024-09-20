@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function mangdep(arr){
+        arr.unshift(0);
+        let a = 0;
+        let b = 0;
+        let c= Math.round(arr.length/2);
+        let d= arr.length
+        for (let i = 1; i < c ; i++) {
+            a += arr[i];
+        }
+        for ( let i = c+1; i < d ; i++) {
+            b += parseInt(arr[i]);
+        }
+        if (a === b){
+            document.write('mảng đẹp')
+        }else {
+            document.write('mảng xấu')
+        }
+    }
+    mangdep([2,3,4,5,9])
+
+</script>
+</body>
+</html>

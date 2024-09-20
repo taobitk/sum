@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+</head>
+<body>
+<canvas id="cav" width="500" height="300" style="border: solid 1px"></canvas>
+<script>
+    function a(){
+        let c = document.getElementById('cav');
+        let conTex = c.getContext('2d');
+        conTex.moveTo(0,0);
+        conTex.lineTo(500,300)
+        conTex.stroke();
+    }
+
+    let canvas = document.getElementById("cav");
+    let ctx = canvas.getContext("2d");
+
+
+    ctx.font = '80px Segoe UI'
+    ctx.fillText('HELLO',100,100)
+
+
+
+</script>
+</body>
+</html>

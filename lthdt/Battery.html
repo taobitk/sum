@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tadaaa</title>
+</head>
+<body>
+<script >
+    class battery {
+        energy;
+       constructor(energy) {
+           this.energy =energy;
+       }
+        getEnergy(){
+            return this.energy;
+        };
+        setEnergy(energy){
+            this.energy = energy;
+        }
+        decreaseEnergy(){
+            if (this.energy>0){
+                return this.energy--;
+            }
+        };
+    }
+</script>
+</body>
+</html>

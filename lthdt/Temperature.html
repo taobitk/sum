@@ -11,7 +11,9 @@
 <script>
     class Temperature{
         temp_C;
-        constructor(temp_C) { this.temp_C = temp_C }
+        constructor(temp_C) {
+                this.temp_C = temp_C;
+        }
         CtoF(){
             return 9/5 * this.temp_C + 32;
         };
